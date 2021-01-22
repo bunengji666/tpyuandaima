@@ -1,0 +1,1923 @@
+---------------------------------------------------------------
+[ 2020-01-03T22:29:48+08:00 ] 117.150.190.136 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006458s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003376s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003360s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:20+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/weixin/callback?code=0015u3nW0tQfd02alFnW0dQTmW05u3nO&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007998s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003689s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5wTtsplJnQPc-CxXdr9qW4o' LIMIT 1 [ RunTime:0.003489s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:21+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007167s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004214s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.004120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004052s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.018497s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:22+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006252s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003530s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003993s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003860s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003441s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004331s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64411  WHERE  `id` = 53 [ RunTime:0.004017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003406s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003418s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:22+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006092s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003615s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003611s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003937s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:23+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/weixin/callback?code=081GiRaZ131xhV08qSaZ1US5bZ1GiRaw&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006655s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003931s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_51ZdxtUSACdVF8n1fO7D_s8' LIMIT 1 [ RunTime:0.003486s ]
+[ sql ] [ SQL ] INSERT INTO `v_vote_user` (`wx_id` , `avatar` , `name` , `nickname` , `wx_content` , `createtime` , `updatetime`) VALUES ('oeST_51ZdxtUSACdVF8n1fO7D_s8' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKv5vrvtPSCaSgJO8PAvllOic4DKcBMfV1VjWBicBibw1QWGznlicn8WTWxhlLyjhJvEUP5QmFStFPrAg/132' , '杉君文化商务' , '杉君文化商务' , '{\"id\":\"oeST_51ZdxtUSACdVF8n1fO7D_s8\",\"name\":\"\\u6749\\u541b\\u6587\\u5316\\u5546\\u52a1\",\"nickname\":\"\\u6749\\u541b\\u6587\\u5316\\u5546\\u52a1\",\"avatar\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/Q0j4TwGTfTKv5vrvtPSCaSgJO8PAvllOic4DKcBMfV1VjWBicBibw1QWGznlicn8WTWxhlLyjhJvEUP5QmFStFPrAg\\/132\",\"email\":null,\"original\":{\"openid\":\"oeST_51ZdxtUSACdVF8n1fO7D_s8\",\"nickname\":\"\\u6749\\u541b\\u6587\\u5316\\u5546\\u52a1\",\"sex\":2,\"language\":\"zh_CN\",\"city\":\"\\u6b66\\u6c49\",\"province\":\"\\u6e56\\u5317\",\"country\":\"\\u4e2d\\u56fd\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/Q0j4TwGTfTKv5vrvtPSCaSgJO8PAvllOic4DKcBMfV1VjWBicBibw1QWGznlicn8WTWxhlLyjhJvEUP5QmFStFPrAg\\/132\",\"privilege\":[]},\"token\":\"29_zSgejegdX2VgLS7KAbNSJqDdrh7JjdrDQUamn4qSTlpiVRMCzd0LuHyNEOiUAyn4WNRW-tD5SU7Qtrh-9bSwBA\",\"provider\":\"WeChat\"}' , 1578061943 , 1578061943) [ RunTime:0.003913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user` [ RunTime:0.004041s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user` WHERE  `wx_id` = 0 LIMIT 1 [ RunTime:0.003563s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:24+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_info?id=2008
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006259s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003921s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2008 [ RunTime:0.004070s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2008 LIMIT 1 [ RunTime:0.003584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003542s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003534s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2008 [ RunTime:0.013391s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003471s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:26+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005706s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003452s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003212s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003012s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:26+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006286s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003556s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003769s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003697s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003406s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004299s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64411  WHERE  `id` = 53 [ RunTime:0.003651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003453s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003487s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:27+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_info?id=2007
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006355s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003780s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2007 [ RunTime:0.004035s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2007 LIMIT 1 [ RunTime:0.003442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003663s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003379s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2007 [ RunTime:0.012195s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003472s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:28+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006534s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004192s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003846s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003681s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:28+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006359s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003943s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003707s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004106s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003486s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003439s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004296s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64411  WHERE  `id` = 53 [ RunTime:0.003632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003442s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003276s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:29+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_info?id=2003
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006314s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003814s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2003 [ RunTime:0.003995s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2003 LIMIT 1 [ RunTime:0.003379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003613s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003509s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2003 [ RunTime:0.012279s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003446s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:30+08:00 ] 117.150.190.136 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005669s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003474s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003056s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003101s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.002978s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003191s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2003  AND `vote_id` = 53 LIMIT 1 [ RunTime:0.002959s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works_user` [ RunTime:0.003066s ]
+[ sql ] [ SQL ] INSERT INTO `v_works_user` (`event_id` , `event_works_id` , `user_id` , `createtime` , `updatetime` , `score`) VALUES (53 , 2003 , 7591 , '2020-01-03 22:32:30' , '2020-01-03 22:32:30' , '1') [ RunTime:0.003628s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 2003 [ RunTime:0.003360s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 53 [ RunTime:0.003198s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:30+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_info?id=2003
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006562s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003876s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2003 [ RunTime:0.003970s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2003 LIMIT 1 [ RunTime:0.003456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003677s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003403s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2003 [ RunTime:0.012298s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003493s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:38+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007028s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004264s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003949s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003826s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:32:38+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007033s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004088s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004236s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004420s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004094s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003930s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004788s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.004097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003988s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004050s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:35+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007957s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004226s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003869s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.219579s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:36+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=54&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005768s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003496s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.205963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 54  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003587s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:36+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/54
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006774s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003695s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=0  WHERE  `id` = 54 [ RunTime:0.004086s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 54 [ RunTime:0.004034s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.206734s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003789s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=0  WHERE  `id` = 54 [ RunTime:0.004054s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003933s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003587s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:38+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006299s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003775s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003628s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.016711s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:40+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=52&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005467s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003269s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.003062s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:40+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/52
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005600s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003326s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 52 LIMIT 1 [ RunTime:0.003025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003134s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=114  WHERE  `id` = 52 [ RunTime:0.003499s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 52 [ RunTime:0.003208s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.003100s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:42+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006452s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003658s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003579s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.220516s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:43+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005930s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003545s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003535s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003477s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:43+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006722s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003978s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004161s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004307s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003902s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004479s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003861s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003595s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:46+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_info?id=2010
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006339s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003413s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2010 [ RunTime:0.003638s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2010 LIMIT 1 [ RunTime:0.003049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003211s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003190s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2010 [ RunTime:0.011915s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003077s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:47+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006552s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003938s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003885s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003872s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:33:47+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006406s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003858s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003566s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003903s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003631s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003545s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004301s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003483s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003411s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:15+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/weixin/callback?code=081zbmCd0Pc6Az1nK5Bd0RTnCd0zbmCE&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009030s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004206s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5-Lrt9azGwdqbobOzjzENag' LIMIT 1 [ RunTime:0.004041s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:16+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006187s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003562s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003629s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003312s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:16+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006478s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003705s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003929s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003775s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003549s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004616s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003674s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003277s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:28+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007812s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003706s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003817s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003701s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003453s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004459s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003525s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003407s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:29+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007253s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004128s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003943s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003893s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:43+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/weixin/callback?code=071csdrR0i8mr42Xg6uR0Ai3rR0csdrf&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007160s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003842s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5yATBg-HxKwccI-bfOJwD44' LIMIT 1 [ RunTime:0.003742s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:43+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006994s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004146s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'b588d01afebc6de61e9b4892bad334a9bd66aa95' LIMIT 1 [ RunTime:0.003808s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003827s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.222936s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:47+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006515s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003885s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003868s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003803s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:34:47+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006722s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003962s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003721s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004086s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003717s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003431s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004456s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003722s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003537s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:01+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007186s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003618s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003372s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004008s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003527s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003246s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003904s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003400s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002983s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:01+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006915s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003870s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003983s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004102s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:08+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005886s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003385s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003072s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003735s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:08+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006102s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003585s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003989s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003585s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003259s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004093s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003302s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003145s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:43+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/weixin/callback?code=021e5S911jAGZV1zJN911x25a11e5S9r&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006662s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003365s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_59pXzZya-Ts4aq7g_giZBAo' LIMIT 1 [ RunTime:0.003134s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:44+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006902s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004362s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003957s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004379s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004035s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:44+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006467s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003606s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004393s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004235s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003671s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004499s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003838s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003601s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003257s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:45+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006253s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003556s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003451s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003410s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:45+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007463s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003988s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004212s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004009s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003887s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004650s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.004148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003877s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003863s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:35:50+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_info?id=2005
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007006s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004933s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2005 [ RunTime:0.004353s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2005 LIMIT 1 [ RunTime:0.003912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004099s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003867s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2005 [ RunTime:0.012798s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003861s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:36:08+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006271s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003611s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003729s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:36:08+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007696s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004036s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003768s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004055s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003876s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003562s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004385s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64412  WHERE  `id` = 53 [ RunTime:0.003842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003622s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003495s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:36:21+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/weixin/callback?code=0118IqC42k8yGR0UQOB42WGnC428IqCz&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006915s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004122s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_50Q5Slbu4a5-kvgj3nejuaU' LIMIT 1 [ RunTime:0.003990s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:36:21+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_info?id=2005
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006582s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003815s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2005 [ RunTime:0.004715s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2005 LIMIT 1 [ RunTime:0.003658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003481s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2005 [ RunTime:0.012501s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003478s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:36:23+08:00 ] 119.178.212.85 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006769s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004080s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '8890241d29d5082b753a46d8342d8b51fee6cdba' LIMIT 1 [ RunTime:0.003769s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003949s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004253s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2005  AND `vote_id` = 53 LIMIT 1 [ RunTime:0.003651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works_user` [ RunTime:0.003998s ]
+[ sql ] [ SQL ] INSERT INTO `v_works_user` (`event_id` , `event_works_id` , `user_id` , `createtime` , `updatetime` , `score`) VALUES (53 , 2005 , 204926 , '2020-01-03 22:36:23' , '2020-01-03 22:36:23' , '1') [ RunTime:0.004197s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 2005 [ RunTime:0.004059s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 53 [ RunTime:0.003919s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:36:24+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_info?id=2005
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006482s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003959s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2005 [ RunTime:0.005927s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2005 LIMIT 1 [ RunTime:0.003897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003991s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003811s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2005 [ RunTime:0.012769s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003896s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:12+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/weixin/callback?code=011axz4Q1hRJn41jEU5Q1XbH4Q1axz43&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007521s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004171s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_57ZSdMFKNWjMJANroZR1OF4' LIMIT 1 [ RunTime:0.003931s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:12+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005573s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003285s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003280s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003070s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:12+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006387s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003551s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004207s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003718s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003592s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004327s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003803s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003573s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003531s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:13+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/weixin/callback?code=001w6ShA1ST3N90bOCiA12h7iA1w6ShY&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006345s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003595s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_556Kgccky03E3wCfHQe3KYg' LIMIT 1 [ RunTime:0.003483s ]
+[ sql ] [ SQL ] INSERT INTO `v_vote_user` (`wx_id` , `avatar` , `name` , `nickname` , `wx_content` , `createtime` , `updatetime`) VALUES ('oeST_556Kgccky03E3wCfHQe3KYg' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/LMCia5mKG5znEZENYCSSEunia7vkJqmuRaiar76YMLUUEQSHUwNSonhl54P9wySLpYvzmYU3GLtyxsTia9h2Gj1DTw/132' , '物是人非i' , '物是人非i' , '{\"id\":\"oeST_556Kgccky03E3wCfHQe3KYg\",\"name\":\"\\u7269\\u662f\\u4eba\\u975ei\",\"nickname\":\"\\u7269\\u662f\\u4eba\\u975ei\",\"avatar\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/LMCia5mKG5znEZENYCSSEunia7vkJqmuRaiar76YMLUUEQSHUwNSonhl54P9wySLpYvzmYU3GLtyxsTia9h2Gj1DTw\\/132\",\"email\":null,\"original\":{\"openid\":\"oeST_556Kgccky03E3wCfHQe3KYg\",\"nickname\":\"\\u7269\\u662f\\u4eba\\u975ei\",\"sex\":0,\"language\":\"zh_CN\",\"city\":\"\",\"province\":\"\",\"country\":\"\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/LMCia5mKG5znEZENYCSSEunia7vkJqmuRaiar76YMLUUEQSHUwNSonhl54P9wySLpYvzmYU3GLtyxsTia9h2Gj1DTw\\/132\",\"privilege\":[]},\"token\":\"29_PvJhiYjFL3HTHC09tEdha1s3vccDNYTAz0ze6ZF8EbhSu0tGMfqZf7GbpT8YKcNZfsIW3zfZDmG1k9xWf43nTblZ0_NA5puGlSvHTP7MEbA\",\"provider\":\"WeChat\"}' , 1578062233 , 1578062233) [ RunTime:0.004020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user` [ RunTime:0.003724s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user` WHERE  `wx_id` = 0 LIMIT 1 [ RunTime:0.003409s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:15+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/weixin/callback?code=011nrFlG0wn7Xf2dr6mG0J5RlG0nrFl9&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006463s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_556Kgccky03E3wCfHQe3KYg' LIMIT 1 [ RunTime:0.003604s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:16+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006334s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003830s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003535s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003532s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:16+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006089s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003442s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003891s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003621s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003298s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004101s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003417s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003320s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:17+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005340s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003045s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003014s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003128s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003051s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:17+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006004s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003414s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003155s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003561s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003252s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003059s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003874s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003257s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002994s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:17+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/weixin/callback?code=0217LJ4n1dkRHn0QB52n1UgL4n17LJ4V&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006469s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004009s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_57ZSdMFKNWjMJANroZR1OF4' LIMIT 1 [ RunTime:0.003865s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:21+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/weixin/callback?code=0014gRWw18Onxf0JWT0x1xz4Xw14gRWl&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006227s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_556Kgccky03E3wCfHQe3KYg' LIMIT 1 [ RunTime:0.003496s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:22+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006255s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003610s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003581s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:22+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006124s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003617s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003503s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004031s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003766s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003361s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004188s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003469s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003251s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:45+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/weixin/callback?code=071KTVW12SJivT0K8LU122HBW12KTVWR&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007208s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003843s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_52JlJTbxNL3IKPj6lL0XkPM' LIMIT 1 [ RunTime:0.003642s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:46+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005839s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003621s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003222s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003233s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:46+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005907s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003404s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003240s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003637s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003222s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003050s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003956s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003126s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002901s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:52+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006484s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003842s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003787s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004146s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003886s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003748s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004537s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.004012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003764s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003540s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:37:52+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006193s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003786s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003631s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003576s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:38:49+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006485s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004011s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003981s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:38:49+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007242s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003727s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004213s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004101s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004341s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004639s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003786s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003530s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003394s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:39:04+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006109s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003511s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003567s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003578s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:39:04+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007668s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003684s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003476s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003947s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003504s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003434s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004208s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003611s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003506s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:06+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/weixin/callback?code=081cMpd62FwyFO0zByb62FBjd62cMpdq&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007646s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003991s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_53QQFLIPjOSRqRctBROzExw' LIMIT 1 [ RunTime:0.003809s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:06+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006075s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003816s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003539s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003947s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:06+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006342s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003675s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003544s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003980s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003818s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003311s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004105s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003365s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003213s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:06+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005426s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003197s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003239s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003148s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:06+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007560s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004718s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004201s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004428s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004136s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003891s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004715s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.004089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003959s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003713s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:08+08:00 ] 223.96.228.95 GET www.ycylyj.cn/api/weixin/callback?code=021o1sfD1U4D680W5deD15OtfD1o1sfW&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006141s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003967s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_59b4hxq549bttA8SCvrb-_w' LIMIT 1 [ RunTime:0.003424s ]
+[ sql ] [ SQL ] INSERT INTO `v_vote_user` (`wx_id` , `avatar` , `name` , `nickname` , `wx_content` , `createtime` , `updatetime`) VALUES ('oeST_59b4hxq549bttA8SCvrb-_w' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/f08wjQ5TRys9ic8UZkH6LPCyb0vYTbpLCeHCMn9unrYmsMAwvE69phFlFnJFVVpmylY4IGV16cuTSa4hHl5o8rA/132' , 'A金舞鞋朱口龙王庙分校🌸' , 'A金舞鞋朱口龙王庙分校🌸' , '{\"id\":\"oeST_59b4hxq549bttA8SCvrb-_w\",\"name\":\"A\\u91d1\\u821e\\u978b\\u6731\\u53e3\\u9f99\\u738b\\u5e99\\u5206\\u6821\\ud83c\\udf38\",\"nickname\":\"A\\u91d1\\u821e\\u978b\\u6731\\u53e3\\u9f99\\u738b\\u5e99\\u5206\\u6821\\ud83c\\udf38\",\"avatar\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/f08wjQ5TRys9ic8UZkH6LPCyb0vYTbpLCeHCMn9unrYmsMAwvE69phFlFnJFVVpmylY4IGV16cuTSa4hHl5o8rA\\/132\",\"email\":null,\"original\":{\"openid\":\"oeST_59b4hxq549bttA8SCvrb-_w\",\"nickname\":\"A\\u91d1\\u821e\\u978b\\u6731\\u53e3\\u9f99\\u738b\\u5e99\\u5206\\u6821\\ud83c\\udf38\",\"sex\":2,\"language\":\"zh_CN\",\"city\":\"\\u83cf\\u6cfd\",\"province\":\"\\u5c71\\u4e1c\",\"country\":\"\\u4e2d\\u56fd\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/f08wjQ5TRys9ic8UZkH6LPCyb0vYTbpLCeHCMn9unrYmsMAwvE69phFlFnJFVVpmylY4IGV16cuTSa4hHl5o8rA\\/132\",\"privilege\":[]},\"token\":\"29_lvf7zojqCs4fQQZmXEATBypi5xul9MQnfh1OIGLUtTvPp7SiFblUOgMM49gZdQKsyG2VlwqVA8KbkVlp-u4T8fFKzKV1OI7U9jo3wVhescM\",\"provider\":\"WeChat\"}' , 1578062468 , 1578062468) [ RunTime:0.003979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user` [ RunTime:0.003782s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user` WHERE  `wx_id` = 0 LIMIT 1 [ RunTime:0.003585s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:17+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/weixin/callback?code=0213wCaH1BV3330KWIcH1F5vaH13wCaq&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006984s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004250s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_59b4hxq549bttA8SCvrb-_w' LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:17+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006213s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003928s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003682s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003752s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:17+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006652s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004036s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003890s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004227s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004014s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003889s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004609s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.004067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003908s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003991s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:18+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006242s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003626s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003778s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003500s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:18+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006464s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003797s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.005009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003555s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003704s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003597s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003367s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004152s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.003722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003618s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003455s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:18+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_info?id=2005
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006267s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003832s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2005 [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2005 LIMIT 1 [ RunTime:0.007152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003300s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2005 [ RunTime:0.012227s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003524s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:32+08:00 ] 119.178.212.85 GET www.ycylyj.cn/api/event/get_works_info?id=2005
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006349s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003787s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2005 [ RunTime:0.004349s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2005 LIMIT 1 [ RunTime:0.003530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003619s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2005 [ RunTime:0.012316s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003444s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:35+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007050s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003997s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003882s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004399s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004022s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003838s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004597s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64413  WHERE  `id` = 53 [ RunTime:0.004065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003866s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:35+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006114s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003534s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003533s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003545s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:41+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=%E7%A9%86%E6%99%A8%E6%9C%88&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007253s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004328s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003852s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%穆晨月%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%穆晨月%' ) LIMIT 0,10 [ RunTime:0.005058s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:45+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_info?id=2543
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006018s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003676s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2543 [ RunTime:0.003637s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2543 LIMIT 1 [ RunTime:0.003191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003277s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003119s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2543 [ RunTime:0.012214s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003239s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:46+08:00 ] 223.104.192.246 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006518s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003330s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '468438d91381a90d625e04ab6fa1683cccc79492' LIMIT 1 [ RunTime:0.002968s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003347s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003300s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2543  AND `vote_id` = 53 LIMIT 1 [ RunTime:0.003086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works_user` [ RunTime:0.003477s ]
+[ sql ] [ SQL ] INSERT INTO `v_works_user` (`event_id` , `event_works_id` , `user_id` , `createtime` , `updatetime` , `score`) VALUES (53 , 2543 , 204936 , '2020-01-03 22:41:46' , '2020-01-03 22:41:46' , '1') [ RunTime:0.003583s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 2543 [ RunTime:0.003491s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 53 [ RunTime:0.003545s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:46+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_info?id=2543
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006575s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003994s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2543 [ RunTime:0.004115s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2543 LIMIT 1 [ RunTime:0.003763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003894s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2543 [ RunTime:0.012667s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003993s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:49+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005813s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003459s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003574s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003094s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:49+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006189s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003591s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003708s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004169s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003711s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003428s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004350s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.003603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003573s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003387s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:59+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007054s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003848s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003673s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004046s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003941s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003589s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004450s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.003726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003648s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003490s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:41:59+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006059s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003721s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003634s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003626s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:01+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006558s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003722s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003682s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.219072s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:31+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006765s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004032s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004216s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004323s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004170s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003991s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004761s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.004047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003813s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003903s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:31+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006015s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003405s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003152s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003359s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:35+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006647s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003989s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003866s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003978s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004114s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:35+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005828s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003382s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003791s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003425s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003059s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003951s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.003334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003300s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003099s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:37+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=%E7%A9%86%E4%B8%87%E8%B1%AA&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005778s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003536s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003295s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%穆万豪%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%穆万豪%' ) LIMIT 0,10 [ RunTime:0.004425s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:38+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_info?id=2548
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006974s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004049s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2548 [ RunTime:0.004211s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2548 LIMIT 1 [ RunTime:0.003820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003862s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003856s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2548 [ RunTime:0.012684s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003928s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:39+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008228s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003856s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003521s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003917s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003714s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003505s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004245s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.003652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003539s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003399s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:39+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006196s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003686s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003571s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003546s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:45+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006661s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004044s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003972s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004018s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:45+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005703s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003264s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003187s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003495s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003361s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003023s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003835s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.003254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003098s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003138s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:46+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005931s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003550s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003464s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003572s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:46+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006535s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003632s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004014s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003682s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003379s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004294s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64414  WHERE  `id` = 53 [ RunTime:0.004030s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003535s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003200s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:50+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_info?id=2002
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006621s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004067s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2002 [ RunTime:0.004572s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002 LIMIT 1 [ RunTime:0.004146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004237s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003715s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2002 [ RunTime:0.012512s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003790s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:53+08:00 ] 119.178.215.155 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006015s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003371s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'dd1eed30d2010b7765231c42420b9b4e625327af' LIMIT 1 [ RunTime:0.003041s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003275s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003096s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002  AND `vote_id` = 53 LIMIT 1 [ RunTime:0.003013s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works_user` [ RunTime:0.003111s ]
+[ sql ] [ SQL ] INSERT INTO `v_works_user` (`event_id` , `event_works_id` , `user_id` , `createtime` , `updatetime` , `score`) VALUES (53 , 2002 , 204932 , '2020-01-03 22:42:53' , '2020-01-03 22:42:53' , '1') [ RunTime:0.003733s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 2002 [ RunTime:0.003322s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 53 [ RunTime:0.003153s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:53+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_info?id=2002
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006119s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003492s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2002 [ RunTime:0.003687s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002 LIMIT 1 [ RunTime:0.003332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003234s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003071s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2002 [ RunTime:0.013187s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003214s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:55+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006253s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003529s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003580s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003530s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:55+08:00 ] 119.178.215.155 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007028s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004381s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003960s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003927s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004285s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003954s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003854s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004705s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64415  WHERE  `id` = 53 [ RunTime:0.004127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003857s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003639s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:57+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_info?id=2548
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006500s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004062s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2548 [ RunTime:0.004395s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2548 LIMIT 1 [ RunTime:0.003814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003726s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004377s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2548 [ RunTime:0.012366s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003528s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:58+08:00 ] 223.104.192.246 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005864s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003342s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '468438d91381a90d625e04ab6fa1683cccc79492' LIMIT 1 [ RunTime:0.003007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003088s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003091s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003025s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2548  AND `vote_id` = 53 LIMIT 1 [ RunTime:0.002945s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works_user` [ RunTime:0.003040s ]
+[ sql ] [ SQL ] INSERT INTO `v_works_user` (`event_id` , `event_works_id` , `user_id` , `createtime` , `updatetime` , `score`) VALUES (53 , 2548 , 204936 , '2020-01-03 22:42:58' , '2020-01-03 22:42:58' , '1') [ RunTime:0.003675s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 2548 [ RunTime:0.003298s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 53 [ RunTime:0.003281s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:42:58+08:00 ] 223.104.192.246 GET www.ycylyj.cn/api/event/get_works_info?id=2548
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005891s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003532s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2548 [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2548 LIMIT 1 [ RunTime:0.003200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003392s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003109s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2548 [ RunTime:0.011901s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003290s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:43:07+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005693s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003450s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003083s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003725s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003397s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003132s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003844s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64416  WHERE  `id` = 53 [ RunTime:0.003324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003149s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002901s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:43:07+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006211s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003631s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003454s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:38+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/weixin/callback?code=011ns5ei0OFFzq1WiLai0KSVdi0ns5eY&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007051s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003443s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_537nnejrqtKTwo55EmBasRU' LIMIT 1 [ RunTime:0.003128s ]
+[ sql ] [ SQL ] INSERT INTO `v_vote_user` (`wx_id` , `avatar` , `name` , `nickname` , `wx_content` , `createtime` , `updatetime`) VALUES ('oeST_537nnejrqtKTwo55EmBasRU' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epK9OHWZRSs0EmY9kPXVVr3qZ4kACegoy3e9jHvib37cVewDahIvxicwL1NKSTE7DfvhOUlUftzPAvA/132' , '珍格格' , '珍格格' , '{\"id\":\"oeST_537nnejrqtKTwo55EmBasRU\",\"name\":\"\\u73cd\\u683c\\u683c\\ue314\",\"nickname\":\"\\u73cd\\u683c\\u683c\\ue314\",\"avatar\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/DYAIOgq83epK9OHWZRSs0EmY9kPXVVr3qZ4kACegoy3e9jHvib37cVewDahIvxicwL1NKSTE7DfvhOUlUftzPAvA\\/132\",\"email\":null,\"original\":{\"openid\":\"oeST_537nnejrqtKTwo55EmBasRU\",\"nickname\":\"\\u73cd\\u683c\\u683c\\ue314\",\"sex\":2,\"language\":\"zh_CN\",\"city\":\"\",\"province\":\"\",\"country\":\"\\u963f\\u5c14\\u53ca\\u5229\\u4e9a\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/DYAIOgq83epK9OHWZRSs0EmY9kPXVVr3qZ4kACegoy3e9jHvib37cVewDahIvxicwL1NKSTE7DfvhOUlUftzPAvA\\/132\",\"privilege\":[]},\"token\":\"29_HTuZWOJ5BI_p27D-KA0E1LrwZcEE3dr6F0FwxAC4O47_MeaiyC3idqAcfCG1ERkQyei2dYfZvgeHQSFEyyI70-l0qcoMVkxjVLdiee0YMjE\",\"provider\":\"WeChat\"}' , 1578062738 , 1578062738) [ RunTime:0.003488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user` [ RunTime:0.003378s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user` WHERE  `wx_id` = 0 LIMIT 1 [ RunTime:0.003144s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:39+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/weixin/callback?code=061FTwnD16Vbg80kY2oD1VbcnD1FTwnR&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006150s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003503s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_537nnejrqtKTwo55EmBasRU' LIMIT 1 [ RunTime:0.003276s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:40+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006244s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003564s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003416s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003500s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:40+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006349s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003903s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003725s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004046s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003725s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003714s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004314s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64416  WHERE  `id` = 53 [ RunTime:0.003817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003636s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003450s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:44+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006366s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003492s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003756s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003595s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:44+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006516s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004189s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003608s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004601s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003714s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003516s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004276s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64416  WHERE  `id` = 53 [ RunTime:0.003765s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003471s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003373s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:44+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/weixin/callback?code=081Ula320uwGIK1d6x2202Fg320Ula3S&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006466s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_537nnejrqtKTwo55EmBasRU' LIMIT 1 [ RunTime:0.003665s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:47+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/weixin/callback?code=001HtTK70R7aTC1f2nN704taL70HtTK3&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005909s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003291s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_537nnejrqtKTwo55EmBasRU' LIMIT 1 [ RunTime:0.003318s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:47+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006066s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003726s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003748s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003654s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:45:47+08:00 ] 223.96.231.59 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006232s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003873s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003966s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003630s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004166s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003619s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003495s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004370s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64416  WHERE  `id` = 53 [ RunTime:0.003715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003494s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.007421s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:05+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008099s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004028s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004044s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004317s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004010s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.006524s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004723s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64416  WHERE  `id` = 53 [ RunTime:0.004318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.004363s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003819s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:05+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005694s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003102s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003464s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003307s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:08+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_info?id=2002
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007058s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003813s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2002 [ RunTime:0.004074s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002 LIMIT 1 [ RunTime:0.004212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003587s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003468s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2002 [ RunTime:0.012526s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003531s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:10+08:00 ] 112.224.23.16 POST www.ycylyj.cn/api/event/vote
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006473s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003821s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c615a93ae9478a2fef786b9620ae9852c3fe707c' LIMIT 1 [ RunTime:0.003457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003620s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003639s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002  AND `vote_id` = 53 LIMIT 1 [ RunTime:0.006182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works_user` [ RunTime:0.003511s ]
+[ sql ] [ SQL ] INSERT INTO `v_works_user` (`event_id` , `event_works_id` , `user_id` , `createtime` , `updatetime` , `score`) VALUES (53 , 2002 , 204935 , '2020-01-03 22:46:10' , '2020-01-03 22:46:10' , '1') [ RunTime:0.003912s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 2002 [ RunTime:0.003846s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=`vote_num`+1  WHERE  `id` = 53 [ RunTime:0.003738s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:10+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_info?id=2002
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006273s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003832s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2002 [ RunTime:0.003983s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002 LIMIT 1 [ RunTime:0.003533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003493s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003511s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2002 [ RunTime:0.012306s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003526s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:24+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005615s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003317s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004835s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003277s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:46:24+08:00 ] 112.224.23.16 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006632s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003186s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003450s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.005101s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003138s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003920s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003211s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003017s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:47:45+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007591s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003962s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003606s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004028s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003704s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003895s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004293s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003575s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003346s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:47:46+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007373s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004296s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003935s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003894s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:47:58+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005988s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003663s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003306s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003812s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003456s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003247s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004251s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003333s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003161s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:47:58+08:00 ] 223.96.229.61 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005896s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003333s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003259s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003294s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:50:32+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007833s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003985s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003678s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003554s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004064s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003937s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003625s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004404s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003972s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003659s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:50:32+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005862s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003486s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003335s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003254s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:51:57+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006814s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004066s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003914s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004042s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:51:57+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006861s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004220s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004050s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004096s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004259s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004209s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003853s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004769s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003969s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.004020s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003783s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:52:20+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007175s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003694s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003699s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 10,10 [ RunTime:0.003641s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:52:57+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=3
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007155s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003944s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003645s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 20,10 [ RunTime:0.005867s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:53:02+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=4
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006473s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003678s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003462s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 30,10 [ RunTime:0.003542s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:53:07+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006471s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003953s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003741s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 40,10 [ RunTime:0.003779s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:53:15+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=6
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006950s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003849s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004692s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 50,10 [ RunTime:0.003721s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:53:27+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=7
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007295s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003613s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 60,10 [ RunTime:0.003634s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:53:45+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=8
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007796s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003722s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003563s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 70,10 [ RunTime:0.003577s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:53:54+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=9
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006718s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004109s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003580s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 80,10 [ RunTime:0.003648s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:54:16+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007108s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003413s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003172s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 90,10 [ RunTime:0.003476s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:54:23+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=11
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005864s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003437s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 100,10 [ RunTime:0.003226s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:54:32+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007365s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004141s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004070s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:54:32+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006556s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003889s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003651s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003984s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004044s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003550s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004566s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.004144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003573s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003730s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:54:40+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=1&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006823s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003651s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003674s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.004829s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1809 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004436s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1723 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004448s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1644 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004509s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1485 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004556s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1126 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004532s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1038 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004589s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 929 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004660s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 914 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004644s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 908 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004677s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 861 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004792s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:55:11+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=2&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008610s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004096s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003782s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004055s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 10,10 [ RunTime:0.005177s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 757 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004961s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 757 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004966s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 702 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005331s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 680 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005099s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 665 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.006701s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 656 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005080s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 634 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005412s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 619 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005210s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 608 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004952s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 572 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005856s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:55:23+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=3&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007421s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003986s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003674s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 20,10 [ RunTime:0.004793s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 511 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004519s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 506 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004652s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 499 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004671s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 486 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004656s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 482 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004797s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 470 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004531s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 444 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004497s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 438 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004613s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 435 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004613s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 418 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004492s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:55:33+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=4&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006737s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003968s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003667s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 30,10 [ RunTime:0.005109s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 392 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004803s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 384 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004707s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 384 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004549s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 363 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004587s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 362 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004549s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 339 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004480s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 334 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004569s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 334 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004567s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 329 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004526s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 323 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004589s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:55:40+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=5&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006672s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004085s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003826s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 40,10 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 323 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004691s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 322 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004631s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 317 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004720s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 313 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004446s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 305 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004603s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 305 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004580s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 301 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004568s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 277 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004911s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 276 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004644s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 275 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004681s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:55:44+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=6&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007284s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004282s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.004015s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004346s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 50,10 [ RunTime:0.005632s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 269 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005096s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 263 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005090s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 262 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005042s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 260 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005023s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 252 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004942s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 250 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005061s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 246 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005247s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 245 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004911s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 243 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005032s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 239 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005531s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:07:39+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007694s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003681s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '9f4cb249dc412edb11e9bc6d9b97e1cc89e4fe56' LIMIT 1 [ RunTime:0.003447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003617s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.018165s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:15:31+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007955s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003883s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004201s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003974s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003675s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004625s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003917s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:15:31+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006350s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003081s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003296s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.002998s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:15:40+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005700s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003247s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003724s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003394s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003253s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003963s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003187s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002945s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:15:40+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006345s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003649s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003928s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003567s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:15:45+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=1&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005956s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003721s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.004794s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1809 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004672s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1723 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004565s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1644 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004655s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1485 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004495s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1126 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004416s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 1038 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004510s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 929 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004743s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 914 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004543s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 908 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004563s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 861 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004521s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:16:08+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=2&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007696s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003633s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'c897d1f4a07645b44c2ede4af78123d2879a4ace' LIMIT 1 [ RunTime:0.003457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53 ORDER BY `vote_num` DESC,`id` DESC LIMIT 10,10 [ RunTime:0.004862s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 757 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004549s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 757 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004523s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 702 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004483s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 680 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.005323s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 665 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004507s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 656 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004313s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 634 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004372s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 619 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004357s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 608 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004352s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND `vote_num` > 572 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.004313s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:16:32+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006956s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003250s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003227s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003495s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003301s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003080s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003773s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003194s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002996s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:16:32+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006598s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003490s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003538s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003493s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:16:46+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008153s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004099s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003754s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003764s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:16:46+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006498s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003837s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003757s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004078s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003782s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003462s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004264s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.003726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003617s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003317s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:16:48+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_info?id=2002
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006313s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003597s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2002 [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002 LIMIT 1 [ RunTime:0.003068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003436s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003251s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2002 [ RunTime:0.012451s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003862s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:17:24+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_info/id/53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007829s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004137s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004105s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003931s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.004339s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.004038s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003677s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004747s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64417  WHERE  `id` = 53 [ RunTime:0.004052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003733s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003627s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:17:24+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006888s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004062s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.004079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003963s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003827s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:17:27+08:00 ] 117.136.93.234 GET www.ycylyj.cn/api/event/get_works_info?id=2002
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006015s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003427s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2002 [ RunTime:0.003577s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2002 LIMIT 1 [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003222s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003060s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2002 [ RunTime:0.013172s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003277s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:47:57+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006788s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003541s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '9f4cb249dc412edb11e9bc6d9b97e1cc89e4fe56' LIMIT 1 [ RunTime:0.003234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.218683s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:48:18+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/weixin/callback?code=021XZcA60aLDbG1vPtx60879A60XZcAC&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006872s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003589s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5xlgfDn6qAXCgwfA9WseDJQ' LIMIT 1 [ RunTime:0.003389s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:48:19+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006799s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003937s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '3c2c70e0f32ea928e3a3d884ab1b337ec6254639' LIMIT 1 [ RunTime:0.003544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003734s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.220719s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:48:21+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_works_list?id=54&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005936s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003536s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.206157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003704s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 54  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003322s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:48:21+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_info/id/54
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005650s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003045s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003111s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=0  WHERE  `id` = 54 [ RunTime:0.003461s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 54 [ RunTime:0.003335s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.205828s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.002951s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=0  WHERE  `id` = 54 [ RunTime:0.003506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003145s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003003s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:50:32+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_works_list?id=52&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005884s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003118s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.003011s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:50:32+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_info/id/52
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007045s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 52 LIMIT 1 [ RunTime:0.003499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003476s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=114  WHERE  `id` = 52 [ RunTime:0.003990s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 52 [ RunTime:0.003741s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.003370s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:50:34+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/rank?vote_id=52&start=1&page=1&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006483s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003602s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '9f4cb249dc412edb11e9bc6d9b97e1cc89e4fe56' LIMIT 1 [ RunTime:0.003345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003616s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52 ORDER BY `vote_num` DESC,`id` DESC LIMIT 0,10 [ RunTime:0.003729s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 6303 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003593s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 5548 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003551s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 5536 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003472s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 5233 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003641s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 4712 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003599s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 4197 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003492s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 3104 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003729s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 2735 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003540s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 2496 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003560s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 52  AND `vote_num` > 2427 ORDER BY `vote_num` ASC LIMIT 1 [ RunTime:0.003586s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:50:37+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_info/id/52
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007025s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 52 LIMIT 1 [ RunTime:0.003742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003886s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=114  WHERE  `id` = 52 [ RunTime:0.004144s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 52 [ RunTime:0.004016s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.003827s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:50:37+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_works_list?id=52&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006169s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003520s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.003471s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:50:37+08:00 ] 183.92.251.204 GET www.ycylyj.cn/api/event/get_list?page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006135s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003517s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '9f4cb249dc412edb11e9bc6d9b97e1cc89e4fe56' LIMIT 1 [ RunTime:0.003338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003457s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.218285s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:52:48+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/weixin/callback?code=061kYzyo0I2CVn10AXzo08rPyo0kYzy4&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007147s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003687s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_51ZdxtUSACdVF8n1fO7D_s8' LIMIT 1 [ RunTime:0.003452s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:52:49+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_info/id/54
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006378s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003520s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=0  WHERE  `id` = 54 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 54 [ RunTime:0.003662s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.014375s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003254s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=0  WHERE  `id` = 54 [ RunTime:0.003635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003454s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 54 LIMIT 1 [ RunTime:0.003223s ]
+---------------------------------------------------------------
+[ 2020-01-03T23:52:49+08:00 ] 117.152.221.219 GET www.ycylyj.cn/api/event/get_works_list?id=54&name=&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005462s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003093s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.205510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003512s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 54  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.003077s ]

@@ -1,0 +1,2 @@
+webpackJsonp([11],{VvXE:function(t,e){},d7Yn:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("h1",[this._v("Pages 404 ...")]),this._v(" "),e("h2",[this._v("Not Found Page ...")]),this._v(" "),e("h3",[e("router-link",{attrs:{to:{path:"login"}}},[this._v("点击这里")])],1)])},staticRenderFns:[]};var s=n("VU/8")({name:"page404"},i,!1,function(t){n("VvXE")},"data-v-286bb97e",null);e.default=s.exports}});
+//# sourceMappingURL=11.1cf4a304df586d0b31ea.js.map

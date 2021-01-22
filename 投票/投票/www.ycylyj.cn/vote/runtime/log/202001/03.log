@@ -1,0 +1,331 @@
+---------------------------------------------------------------
+[ 2020-01-03T22:29:36+08:00 ] 117.150.190.136 GET www.ycylyj.cn/
+[运行时间：0.003379s] [吞吐率：295.94req/s] [内存消耗：151.87kb] [文件加载：100]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000203s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000220s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000118s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.ycylyj.cn/vote/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./system/dist/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-01-03T22:29:36+08:00 ] 117.150.190.136 GET www.ycylyj.cn/favicon.ico
+[运行时间：0.002764s] [吞吐率：361.80req/s] [内存消耗：137.91kb] [文件加载：96]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000211s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000228s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-01-03T22:29:36+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_list?page=1
+[运行时间：0.243546s] [吞吐率：4.11req/s] [内存消耗：688.19kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000155s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000167s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'event',
+    2 => 'get_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'token' => '3af8db834ec45486fa0bee8969c3a87e6ab8cab0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000085s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Event->get_list[ /www/wwwroot/www.ycylyj.cn/vote/application/api/controller/Event.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007640s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '373de64897b923b91899de13811e2a6cbcb7c65b' LIMIT 1 [ RunTime:0.003374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003539s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.219118s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:29:38+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_list?id=53&name=&page=1
+[运行时间：0.028104s] [吞吐率：35.58req/s] [内存消耗：409.52kb] [文件加载：114]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000149s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000161s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'event',
+    2 => 'get_works_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'token' => '3af8db834ec45486fa0bee8969c3a87e6ab8cab0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '53',
+  'name' => '',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000090s ]
+[ info ] [ RUN ] app\api\controller\Event->get_works_list[ /www/wwwroot/www.ycylyj.cn/vote/application/api/controller/Event.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007296s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.004015s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.004237s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `vote_id` = 53  AND ( `title` LIKE '%%' OR `sort_id` LIKE 0 OR `user_name` LIKE '%%' ) LIMIT 0,10 [ RunTime:0.004100s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:29:38+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_info/id/53
+[运行时间：0.047421s] [吞吐率：21.09req/s] [内存消耗：402.22kb] [文件加载：115]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000183s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000198s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'event',
+    2 => 'get_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'token' => '3af8db834ec45486fa0bee8969c3a87e6ab8cab0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '53',
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000093s ]
+[ info ] [ RUN ] app\api\controller\Event->get_info[ /www/wwwroot/www.ycylyj.cn/vote/application/api/controller/Event.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006009s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003519s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.003359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003617s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `join_num`=1061  WHERE  `id` = 53 [ RunTime:0.003660s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `look_num`=`look_num`+3  WHERE  `id` = 53 [ RunTime:0.003450s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003220s ]
+[ sql ] [ SQL ] SELECT SUM(vote_num) AS tp_sum FROM `v_works` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.004285s ]
+[ sql ] [ SQL ] UPDATE `v_vote`  SET `vote_num`=64411  WHERE  `id` = 53 [ RunTime:0.003348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_banner` [ RunTime:0.003295s ]
+[ sql ] [ SQL ] SELECT `images` FROM `v_banner` WHERE  `vote_id` = 53 LIMIT 1 [ RunTime:0.002960s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:29:38+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/weixin/jsSignature?url=http%253A%252F%252Fwww.ycylyj.cn%252F
+[运行时间：0.020515s] [吞吐率：48.74req/s] [内存消耗：357.50kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000150s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000162s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'weixin',
+    2 => 'jsSignature',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'token' => '3af8db834ec45486fa0bee8969c3a87e6ab8cab0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http%3A%2F%2Fwww.ycylyj.cn%2F',
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000084s ]
+[ info ] [ RUN ] app\api\controller\Weixin->jsSignature[ /www/wwwroot/www.ycylyj.cn/vote/application/api/controller/Weixin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-01-03T22:29:44+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/event/get_works_info?id=2006
+[运行时间：0.046579s] [吞吐率：21.47req/s] [内存消耗：412.16kb] [文件加载：114]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000201s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000217s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'event',
+    2 => 'get_works_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'token' => '3af8db834ec45486fa0bee8969c3a87e6ab8cab0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2006',
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000133s ]
+[ info ] [ RUN ] app\api\controller\Event->get_works_info[ /www/wwwroot/www.ycylyj.cn/vote/application/api/controller/Event.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006430s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_works` [ RunTime:0.003834s ]
+[ sql ] [ SQL ] UPDATE `v_works`  SET `hot_num`=`hot_num`+1  WHERE  `id` = 2006 [ RunTime:0.003992s ]
+[ sql ] [ SQL ] SELECT * FROM `v_works` WHERE  `id` = 2006 LIMIT 1 [ RunTime:0.003432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote` [ RunTime:0.003465s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003319s ]
+[ sql ] [ SQL ] SELECT b.* FROM(
+								SELECT t.*, @rownum := @rownum + 1 AS rownum
+								FROM (SELECT @rownum := 0) r,
+								(SELECT * FROM v_works where vote_id=53 ORDER BY vote_num DESC,id desc) AS t
+		  ) AS b WHERE b.id =2006 [ RunTime:0.012030s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.003691s ]
+---------------------------------------------------------------
+[ 2020-01-03T22:29:44+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/weixin/jsSignature?url=http%253A%252F%252Fwww.ycylyj.cn%252F
+[运行时间：0.003606s] [吞吐率：277.31req/s] [内存消耗：285.78kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000146s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000158s ]
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'weixin',
+    2 => 'jsSignature',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ycylyj.cn/',
+  'x-requested-with' => 'com.tencent.mm',
+  'token' => '3af8db834ec45486fa0bee8969c3a87e6ab8cab0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 MMWEBID/5351 MicroMessenger/7.0.10.1580(0x27000A73) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.ycylyj.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http%3A%2F%2Fwww.ycylyj.cn%2F',
+)
+[ info ] [ LANG ] /www/wwwroot/www.ycylyj.cn/vote/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000105s ]
+[ info ] [ RUN ] app\api\controller\Weixin->jsSignature[ /www/wwwroot/www.ycylyj.cn/vote/application/api/controller/Weixin.php ]
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,101 @@
+---------------------------------------------------------------
+[ 2020-01-05T00:12:41+08:00 ] 111.177.93.51 GET www.ycylyj.cn/api/weixin/callback?code=021a3L8p1pYgdl0NGE8p1qFv8p1a3L8I&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007490s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003812s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_52mgmiI6J-GU6cZQkyMRl1E' LIMIT 1 [ RunTime:0.003529s ]
+---------------------------------------------------------------
+[ 2020-01-05T00:46:15+08:00 ] 113.57.247.172 GET www.ycylyj.cn/api/weixin/callback?code=011elbfk0sDezs1PARgk0Yrcfk0elbfp&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007813s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003727s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5-Lrt9azGwdqbobOzjzENag' LIMIT 1 [ RunTime:0.003507s ]
+---------------------------------------------------------------
+[ 2020-01-05T00:46:19+08:00 ] 113.57.247.172 GET www.ycylyj.cn/api/weixin/callback?code=071bDh462TMVEO0UZ1462YM8462bDh4N&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006437s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003331s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5-Lrt9azGwdqbobOzjzENag' LIMIT 1 [ RunTime:0.003180s ]
+---------------------------------------------------------------
+[ 2020-01-05T00:46:21+08:00 ] 113.57.247.172 GET www.ycylyj.cn/api/weixin/callback?code=061TZoIS0ZAj212f5sKS0i1GIS0TZoIr&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007517s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004053s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5-Lrt9azGwdqbobOzjzENag' LIMIT 1 [ RunTime:0.003915s ]
+---------------------------------------------------------------
+[ 2020-01-05T02:11:30+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/weixin/callback?code=081tQAEx1K39zb0nVFBx14HyEx1tQAES&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008378s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004052s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5wTtsplJnQPc-CxXdr9qW4o' LIMIT 1 [ RunTime:0.003833s ]
+---------------------------------------------------------------
+[ 2020-01-05T02:11:33+08:00 ] 117.150.190.136 GET www.ycylyj.cn/api/weixin/callback?code=021Ojz1K0hmUEa2KxA1K0yRE1K0Ojz1a&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007707s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004212s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5wTtsplJnQPc-CxXdr9qW4o' LIMIT 1 [ RunTime:0.003985s ]
+---------------------------------------------------------------
+[ 2020-01-05T05:06:32+08:00 ] 117.185.18.7 GET www.ycylyj.cn/api/event/rank?vote_id=53&start=1&page=4&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008441s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.003338s ]
+---------------------------------------------------------------
+[ 2020-01-05T06:46:43+08:00 ] 223.96.224.181 GET www.ycylyj.cn/api/weixin/callback?code=071EcBAJ0Bgyda2mWwzJ0g4DAJ0EcBAT&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007867s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003743s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5whdj89Mi6pFQIJc7-jzCrM' LIMIT 1 [ RunTime:0.003479s ]
+[ sql ] [ SQL ] INSERT INTO `v_vote_user` (`wx_id` , `avatar` , `name` , `nickname` , `wx_content` , `createtime` , `updatetime`) VALUES ('oeST_5whdj89Mi6pFQIJc7-jzCrM' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIkxnSZuao2zwypQHeOia2uWicZibOgunfslpNa8LnF4UvWUVJ8ichTd3icz4TWdFexksB4K3XPKsaPxkw/132' , '心动小礼物' , '心动小礼物' , '{\"id\":\"oeST_5whdj89Mi6pFQIJc7-jzCrM\",\"name\":\"\\u5fc3\\u52a8\\u5c0f\\u793c\\u7269\",\"nickname\":\"\\u5fc3\\u52a8\\u5c0f\\u793c\\u7269\",\"avatar\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/Q0j4TwGTfTIkxnSZuao2zwypQHeOia2uWicZibOgunfslpNa8LnF4UvWUVJ8ichTd3icz4TWdFexksB4K3XPKsaPxkw\\/132\",\"email\":null,\"original\":{\"openid\":\"oeST_5whdj89Mi6pFQIJc7-jzCrM\",\"nickname\":\"\\u5fc3\\u52a8\\u5c0f\\u793c\\u7269\",\"sex\":2,\"language\":\"zh_CN\",\"city\":\"\\u83cf\\u6cfd\",\"province\":\"\\u5c71\\u4e1c\",\"country\":\"\\u4e2d\\u56fd\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/Q0j4TwGTfTIkxnSZuao2zwypQHeOia2uWicZibOgunfslpNa8LnF4UvWUVJ8ichTd3icz4TWdFexksB4K3XPKsaPxkw\\/132\",\"privilege\":[]},\"token\":\"29_uETSb9szCCU4MEjYqW_rDR30ggTOWVGB1LPDO7-rCtXlKGKTg8QhOL4MYorZw96X1nM9ihyZRBsdU_xDz6NWSPHlLvfjCEa7qobFficx3vw\",\"provider\":\"WeChat\"}' , 1578178003 , 1578178003) [ RunTime:0.003974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user` [ RunTime:0.003692s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user` WHERE  `wx_id` = 0 LIMIT 1 [ RunTime:0.003381s ]
+---------------------------------------------------------------
+[ 2020-01-05T06:47:14+08:00 ] 223.96.224.181 GET www.ycylyj.cn/api/weixin/callback?code=071R2pC71QKLGO1ANTD71ZDEC71R2pCP&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008469s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004115s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5whdj89Mi6pFQIJc7-jzCrM' LIMIT 1 [ RunTime:0.004162s ]
+---------------------------------------------------------------
+[ 2020-01-05T06:47:17+08:00 ] 223.96.224.181 GET www.ycylyj.cn/api/weixin/callback?code=0815Yu6S1Lj0X11Aaw8S1dZP6S15Yu6R&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007404s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003592s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5whdj89Mi6pFQIJc7-jzCrM' LIMIT 1 [ RunTime:0.003571s ]
+---------------------------------------------------------------
+[ 2020-01-05T06:47:23+08:00 ] 223.96.224.181 GET www.ycylyj.cn/api/weixin/callback?code=071sEyAy1CuBuc0FaVBy1mSvAy1sEyAx&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007134s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003888s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5whdj89Mi6pFQIJc7-jzCrM' LIMIT 1 [ RunTime:0.003704s ]
+---------------------------------------------------------------
+[ 2020-01-05T06:47:31+08:00 ] 223.96.224.181 GET www.ycylyj.cn/api/weixin/callback?code=0616Ue2Q1oAJp41ZguYP1Co92Q16Ue2z&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007507s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004243s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5whdj89Mi6pFQIJc7-jzCrM' LIMIT 1 [ RunTime:0.004017s ]
+---------------------------------------------------------------
+[ 2020-01-05T06:53:18+08:00 ] 223.96.224.181 GET www.ycylyj.cn/api/weixin/callback?code=011J5do11sPP5W1OXZq11udgo11J5dop&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008447s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004032s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5whdj89Mi6pFQIJc7-jzCrM' LIMIT 1 [ RunTime:0.003873s ]
+---------------------------------------------------------------
+[ 2020-01-05T07:00:47+08:00 ] 183.92.250.172 GET www.ycylyj.cn/api/weixin/callback?code=001Y426d14tE1w0zxg7d12Oa6d1Y426i&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007460s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003407s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5-Lrt9azGwdqbobOzjzENag' LIMIT 1 [ RunTime:0.003141s ]
+---------------------------------------------------------------
+[ 2020-01-05T07:00:51+08:00 ] 183.92.250.172 GET www.ycylyj.cn/api/weixin/callback?code=071hHshn0l8XEm1HCBjn0F1chn0hHshX&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006896s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003384s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5-Lrt9azGwdqbobOzjzENag' LIMIT 1 [ RunTime:0.003340s ]
+---------------------------------------------------------------
+[ 2020-01-05T08:23:15+08:00 ] 218.26.55.70 GET www.ycylyj.cn/api/event/rank?start=1&page=1&end=10
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009157s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user_token` [ RunTime:0.004330s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user_token` WHERE  `token` = '064caa60eb6eeaa03fcdb0fa68b04738589902c1' LIMIT 1 [ RunTime:0.003895s ]
+---------------------------------------------------------------
+[ 2020-01-05T09:14:14+08:00 ] 27.206.81.207 GET www.ycylyj.cn/api/weixin/callback?code=081ELJzZ0uwRgU195zxZ04WzzZ0ELJz5&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007417s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004533s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5yU5X_IoVD2Mk2MP3CTNA64' LIMIT 1 [ RunTime:0.003795s ]
+[ sql ] [ SQL ] INSERT INTO `v_vote_user` (`wx_id` , `avatar` , `name` , `nickname` , `wx_content` , `createtime` , `updatetime`) VALUES ('oeST_5yU5X_IoVD2Mk2MP3CTNA64' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eozicGD5jnh96eKmJLNVMEp1aeOxtx751OOF4dRYMkluMWSQo2bBJjCKM3jCNuOVx5vKUK2qUMpicCA/132' , '真爱永恒' , '真爱永恒' , '{\"id\":\"oeST_5yU5X_IoVD2Mk2MP3CTNA64\",\"name\":\"\\u771f\\u7231\\u6c38\\u6052\",\"nickname\":\"\\u771f\\u7231\\u6c38\\u6052\",\"avatar\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/DYAIOgq83eozicGD5jnh96eKmJLNVMEp1aeOxtx751OOF4dRYMkluMWSQo2bBJjCKM3jCNuOVx5vKUK2qUMpicCA\\/132\",\"email\":null,\"original\":{\"openid\":\"oeST_5yU5X_IoVD2Mk2MP3CTNA64\",\"nickname\":\"\\u771f\\u7231\\u6c38\\u6052\",\"sex\":2,\"language\":\"zh_CN\",\"city\":\"\\u83cf\\u6cfd\",\"province\":\"\\u5c71\\u4e1c\",\"country\":\"\\u4e2d\\u56fd\",\"headimgurl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/DYAIOgq83eozicGD5jnh96eKmJLNVMEp1aeOxtx751OOF4dRYMkluMWSQo2bBJjCKM3jCNuOVx5vKUK2qUMpicCA\\/132\",\"privilege\":[]},\"token\":\"29_YmCSarF7JIFGkDQpnLmRJTUg6q2c4JeTLA7oxUsnXDys3T_lZ3yyoD-ikItAqOs0efIIXIkWhVmmZAGuPDv3hEuPT-cG83kuDfpC2D8zsWM\",\"provider\":\"WeChat\"}' , 1578186854 , 1578186854) [ RunTime:0.004285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_user` [ RunTime:0.003885s ]
+[ sql ] [ SQL ] SELECT * FROM `v_user` WHERE  `wx_id` = 0 LIMIT 1 [ RunTime:0.003884s ]
+---------------------------------------------------------------
+[ 2020-01-05T09:14:22+08:00 ] 27.206.81.207 GET www.ycylyj.cn/api/weixin/callback?code=081lAWca28AozJ0g5xea252Lca2lAWcn&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007549s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.003937s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_5yU5X_IoVD2Mk2MP3CTNA64' LIMIT 1 [ RunTime:0.003993s ]
+---------------------------------------------------------------
+[ 2020-01-05T09:39:31+08:00 ] 211.161.245.162 GET www.ycylyj.cn/api/weixin/callback?code=061itrzJ0MLTca2GI5AJ0UahzJ0itrzf&state=STATE
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007732s ] mysql:host=mysql57.rdsmyver14cu5vc.rds.bj.baidubce.com;dbname=www_ssjunjun_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `v_vote_user` [ RunTime:0.004219s ]
+[ sql ] [ SQL ] SELECT * FROM `v_vote_user` WHERE  `wx_id` = 'oeST_534in5lkjTZ5OjaVUCwiiys' LIMIT 1 [ RunTime:0.004100s ]
